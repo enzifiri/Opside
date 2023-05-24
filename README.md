@@ -45,13 +45,13 @@ cd ./testnet-auto-install-v2
 ```
 ## Bu adımda DİKKAT! , Üstteki komutu yazdıktan sonra bizden bilgileri doldurmamızı isteyecek
 > ## 1. Ödüllerin gelmesini istediğiniz Metamask adresinizi yazın.
-> ## 2. Şifre belirleyin. (Validatör imza anahtarınızı şifreleyecek, basit bişey yapın)
+> ## 2. Şifre belirleyin. (Validatör imza anahtarınızı şifreleyecek)
 > ## 3. Tekrar Metamask adresinizi yazın.
 > ## 4. Şifreyi tekrar yazın
 > ## Sonrasında size 24 haneli Mnemonicler verecek bunları not defterine yedekleyin, sonraki adımda bizden isteyecek fakat kopyala yapıştır yapmamamız gerekiyor! Nedeni ise her kelimenin sadece ilk 4 hanesini kabul ediyor. O yüzden sizden kelimeleri istediğinizde kelimelerin sadece ilk 4 hanesini gireceksiniz, alttaki görselde örneği görebilirsiniz. 
 ![image](https://github.com/enzifiri/asdasd/assets/76253089/0c2a3c51-18b9-4536-84ad-006f9bcfad12)
 
-## Sunucudaki işlemimiz bitti. [Discord kanalından](https://discord.gg/opside) formu doldururken kullandığımız cüzdana token talep edip Website kullanarak stake edeceğiz. 
+## Sunucudaki işlemimiz bitti. [Discord kanalından](https://discord.gg/opside) kullandığımız cüzdana token talep edip Website kullanarak Validatör oluşturacağız. 
 
 ## Öncelikle faucetten token talep edelim.
 
@@ -60,7 +60,7 @@ cd ./testnet-auto-install-v2
 > ### Başarılı olursanız alttaki gibi çıktı alacaksınız. Hata verirse adresiniz testnete seçilmemiştir. :(
 ![image](https://github.com/enzifiri/asdasd/assets/76253089/85e01c3c-1b85-4331-be75-67ea4dc1eedc)
 
-## Tokenleri Websiteden Stake edelim.
+## Validatörümüzü oluşturalım.
 
 >## [Websiteye girin](https://opside.network/validator/deposit)
 >## Testnet cüzdanınızı bağlayın (Faucetten token talep ettiğinizi)
@@ -68,8 +68,19 @@ cd ./testnet-auto-install-v2
 ![image](https://github.com/enzifiri/asdasd/assets/76253089/1811bc04-50b4-4f23-8bce-1c2b78226d3a)
 
 >## Sonra sayfayı en alta çekip tekrar contiune tusuna basın. 
->## Buraya sunucudaki  root/testnet-auto-install-v2/validator_keys/deposit_data-1... dizinindeki dosyayı yüklemeniz gerekiyor. WinScp ya da MobaXTerm kullanarak bu dosyayı bilgisayarına indirin. Sonrasında ise websiteye yükleyin. [WinScpyi nasıl kullanacağınızı bilmiyorsanız tıklayın](https://github.com/Core-Node-Team/cosmos-node-backup)
+>## Buraya sunucudaki  "root/testnet-auto-install-v2/validator_keys/deposit_data1.." dizinindeki dosyayı alıp yüklemeniz gerekiyor. WinScp ya da MobaXTerm kullanarak bu dosyayı bilgisayarına indirin. Sonrasında ise websiteye yükleyin. <br> [WinScpyi nasıl kullanacağınızı bilmiyorsanız tıklayın](https://github.com/Core-Node-Team/cosmos-node-backup)
 >![image](https://github.com/enzifiri/asdasd/assets/76253089/ac9bb626-9fea-4ee3-bd59-8db34d81ffed)
 >## Dosyayı yükledikten sonra sizden yine onaylar isteyecek hepsinin tikini onaylayıp Contiune tuşuna basın.
-< ![image](https://github.com/enzifiri/asdasd/assets/76253089/0dd22d89-91b3-4b79-8ef3-8fd9410e6eff)
+>![image](https://github.com/enzifiri/asdasd/assets/76253089/0dd22d89-91b3-4b79-8ef3-8fd9410e6eff)
+>## Sonrasında 25K Tokenimizi stake etmek kalıyor. Confirm deposit tuşuna basın, metamask onayını verin, contiune tuşuna basın.. <br> İşlemlerimiz bu kadardı.
+>![image](https://github.com/enzifiri/asdasd/assets/76253089/6ac4d5bc-fcc7-4dab-b7c1-d506cf67c868)
 
+## İşe yarar komutlar
+### Client Logları göster.
+`` opside-chain/show-geth-log.sh ``
+
+### Consensus client logları göster.
+`` opside-chain/show-beaconChain-log.sh ``
+
+### Validatör loglarını göster.
+`` opside-chain/show-validator-log.sh ``

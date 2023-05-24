@@ -51,8 +51,25 @@ cd ./testnet-auto-install-v2
 > ## Sonrasında size 24 haneli Mnemonicler verecek bunları not defterine yedekleyin, sonraki adımda bizden isteyecek fakat kopyala yapıştır yapmamamız gerekiyor! Nedeni ise her kelimenin sadece ilk 4 hanesini kabul ediyor. O yüzden sizden kelimeleri istediğinizde kelimelerin sadece ilk 4 hanesini gireceksiniz, alttaki görselde örneği görebilirsiniz. 
 ![image](https://github.com/enzifiri/asdasd/assets/76253089/0c2a3c51-18b9-4536-84ad-006f9bcfad12)
 
-## Sunucudaki işlemimiz bitti. Discord kanalından formu doldururken kullandığımız cüzdana token talep edip Website kullanarak stake edeceğiz. Öncelikle faucetten token talep edelim.
+## Sunucudaki işlemimiz bitti. [Discord kanalından](https://discord.gg/opside) formu doldururken kullandığımız cüzdana token talep edip Website kullanarak stake edeceğiz. 
 
-> ## Soldan Faucet Menüsü altındaki #for-validators kanalına girin.
-> ## Bu komutla tokenlerinizi talep edin. "@Opside Faucet 0xCüzdanAdresiniz"
+## Öncelikle faucetten token talep edelim.
+
+> ### Soldan Faucet Menüsü altındaki #for-validators kanalına girin.
+> ### Bu komutla tokenlerinizi talep edin. "@Opside Faucet 0xCüzdanAdresiniz"
+> ### Başarılı olursanız alttaki gibi çıktı alacaksınız. Hata verirse adresiniz testnete seçilmemiştir. :(
 ![image](https://github.com/enzifiri/asdasd/assets/76253089/85e01c3c-1b85-4331-be75-67ea4dc1eedc)
+
+## Tokenleri Websiteden Stake edelim.
+
+>## [Websiteye girin](https://opside.network/validator/deposit)
+>## Testnet cüzdanınızı bağlayın (Faucetten token talep ettiğinizi)
+>## Karşınıza çıkacak olan tüm Contiune, I accept tuşlarına basıp şartları kabul edin.
+![image](https://github.com/enzifiri/asdasd/assets/76253089/1811bc04-50b4-4f23-8bce-1c2b78226d3a)
+
+>## Sonra sayfayı en alta çekip tekrar contiune tusuna basın. 
+>## Buraya sunucudaki  root/testnet-auto-install-v2/validator_keys/deposit_data-1... dizinindeki dosyayı yüklemeniz gerekiyor. WinScp ya da MobaXTerm kullanarak bu dosyayı bilgisayarına indirin. Sonrasında ise websiteye yükleyin. [WinScpyi nasıl kullanacağınızı bilmiyorsanız tıklayın](https://github.com/Core-Node-Team/cosmos-node-backup)
+>![image](https://github.com/enzifiri/asdasd/assets/76253089/ac9bb626-9fea-4ee3-bd59-8db34d81ffed)
+>## Dosyayı yükledikten sonra sizden yine onaylar isteyecek hepsinin tikini onaylayıp Contiune tuşuna basın.
+< ![image](https://github.com/enzifiri/asdasd/assets/76253089/0dd22d89-91b3-4b79-8ef3-8fd9410e6eff)
+

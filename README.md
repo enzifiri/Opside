@@ -76,7 +76,9 @@ cd ./testnet-auto-install-v2
 >![image](https://github.com/enzifiri/asdasd/assets/76253089/6ac4d5bc-fcc7-4dab-b7c1-d506cf67c868)
 
 ## İşe yarar komutlar
-### Client Logları göster.
+### Client Logları göster. (Başarılı Log örneği)
+![image](https://github.com/enzifiri/asdasd/assets/76253089/96ba203f-b2f0-4496-98e0-28f336dfd76b)
+
 `` opside-chain/show-geth-log.sh ``
 
 ### Consensus client logları göster.
